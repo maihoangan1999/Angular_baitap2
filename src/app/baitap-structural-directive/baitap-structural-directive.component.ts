@@ -39,8 +39,8 @@ export class BaitapStructuralDirectiveComponent implements OnInit {
     this.danhSachSanPham.push(sanPham);
     localStorage.setItem("user", JSON.stringify(this.danhSachSanPham));
   }
-  xoaSanPham(i: number): void {
-    this.danhSachSanPham.splice(i, 1);
+  xoaSanPham(sanpham) {
+    this.danhSachSanPham.splice(this.danhSachSanPham.indexOf(sanpham), 1);
     localStorage.setItem("user", JSON.stringify(this.danhSachSanPham));
   }
 }
