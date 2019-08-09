@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3" *ngFor="let item of danhSachPhim">
+            <app-item-phim [phim]="item" (suKienPhim)="likes($event)"></app-item-phim>
+        </div>
+        <button class="btn btn-success m-3" (click)="viewChildren()">ViewChildren</button>
+    </div>
+    <div class="row">
+        <h2 style="text-align: center">Danh sach like</h2>
+        <div class="col-sm-12">
+            <p *ngFor="let item of danhSachLike">{{item.maPhim}}-{{item.tenPhim}} - {{item.soLike}} </p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+=== Buổi 1 ===
+* Component
+* Module
+
+Lệnh tạo Component => ng g c <Tên Component>
+Lệnh tạo Module => ng g m <Tên Module>
+Lệnh tạo Component trong Module => ng g c TenComponent --module=<Tên folder Module>
+
+=======Buổi 2========
+* Data binding
+	- Oneway Binding
+		+ Interpolation // Sử dụng cặp dấu {{}}
+		+ Property Binding // Sử dụng cặp dấu []
+		+ Event Binding // Sự kết hợp giữa property & event Binding [()]
+	- Twoway Binding
+	
+* Directives
+	- Component Directive
+	- Structural Directive
+		+ ngIf
+	
+	

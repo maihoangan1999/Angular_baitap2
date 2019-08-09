@@ -1,0 +1,18 @@
+<h3 style="color:red">Bài tập Binding</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" class="form-control" [(ngModel)]="email">
+            </div>
+            <div class="form-group">
+                <label>Full name</label>
+                <input type="text" class="form-control" #thamso>
+            </div>
+            <button class="btn btn-success" (click)="eventBinding(thamso.value)">Submit</button>
+        </div>
+    </div>
+    <p>Email: {{email}}</p>
+    <p>Fullname: {{fullName}}</p>
+</div>
